@@ -1,0 +1,12 @@
+var scope = 'superscope';
+var aantal = 0;
+
+function testScope() {
+    var scope = 'lokalescope';
+    aantal++;
+    console.log('\tDit is test nummer: ' + aantal);
+    console.log('\tFunction scope is: ' + scope);
+}
+console.log('\tScript scope is: ' + scope);
+testScope();
+testScope();
