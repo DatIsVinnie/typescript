@@ -14,6 +14,12 @@ var Persoon = /** @class */ (function () {
         console.log('Niuew Persoon-Object aangemaakt.');
         console.log('De property naam is: ' + this.naam);
     }
+    Persoon.prototype.getLeeftijd = function () {
+        return this.leeftijd;
+    };
+    Persoon.prototype.setLeeftijd = function (leeftijd) {
+        this.leeftijd = leeftijd;
+    };
     return Persoon;
 }());
 exports.Persoon = Persoon;
